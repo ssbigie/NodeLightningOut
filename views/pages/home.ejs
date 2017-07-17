@@ -18,7 +18,7 @@
           var url = "<%= ouathLightningURL %>";
           var token = "Bearer "+"<%= oauthtoken %>";
           console.log(token);
-            $Lightning.use("c:dependencyApp.app", function() {
+            $Lightning.use("c:dependencyApp", function() {
                   $Lightning.createComponent("forceChatter:feed", {},
                      "chatterFeed",
                       function(cmp) {
